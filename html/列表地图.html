@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>列表地图</title>
+    <link rel="stylesheet" href="res/lib/swiper/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="res/lib/swiper/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="res/lib/fancybox/jquery.fancybox-1.3.4.css"/>
+    <link rel="stylesheet" type="text/css" href="res/lib/vidbacking/jquery.vidbacking.min.css"/>
+    <link rel="stylesheet" href="res/css/index.css">
+    <script src="res/lib/jquery/jquery-1.8.3.min.js"></script>
+    <script src="res/lib/superSlide/jquery.SuperSlide.2.1.1.js"></script>
+    <script src="res/lib/nicescroll/jquery.nicescroll.min.js"></script>
+    <script src="res/lib/jwplayer/js/jwplayer.js"></script>
+    <script src="res/lib/jwplayer/js/jwplayer.html5.js"></script>
+    <script src="res/lib/jwplayer/js/jwpsrv.js"></script>
+    <script src="res/lib/fancybox/jquery.mousewheel-3.0.4.pack.js" type="text/javascript" ></script>
+    <script src="res/lib/fancybox/jquery.fancybox-1.3.4.pack.js" type="text/javascript" ></script>
+    <script src="res/lib/swiper/swiper-3.4.2.jquery.min.js" type="text/javascript"></script>
+    <script src="res/lib/vidbacking/jquery.vidbacking.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&amp;ak=D4739134efb9184fccbaec0ecf825c15"></script>
+</head>
+
+<body>
+    <div class="wraper" style="max-width: 100%;height: 100%;">
+        <div class="businessMap">
+            <div class="sideBox">
+                <div></div>
+                <a href="#" class="active">旅游资源<em></em></a><b></b><a href="#">特色线路<em></em></a>
+            </div>
+            <div class="mainBox">
+                <div class="navBox">
+                    <div class="navList">
+                        <ul class="fn-clear">
+                            <li class="item1">
+                                <a href="#">
+                                    <i></i>
+                                    <em>全部</em>
+                                </a>
+                            </li>
+                            <li class="item2 active">
+                                <a href="#">
+                                    <i></i>
+                                    <em>景区</em>
+                                </a>
+                            </li>
+                            <li class="item3">
+                                <a href="#">
+                                    <i></i>
+                                    <em>购物</em>
+                                </a>
+                            </li>
+                            <li class="item4">
+                                <a href="#">
+                                    <i></i>
+                                    <em>酒店</em>
+                                </a>
+                            </li>
+                            <li class="item5">
+                                <a href="#">
+                                    <i></i>
+                                    <em>娱乐</em>
+                                </a>
+                            </li>
+                            <li class="item6">
+                                <a href="#">
+                                    <i></i>
+                                    <em>餐厅</em>
+                                </a>
+                            </li>
+                            <li class="item7">
+                                <a href="#">
+                                    <i></i>
+                                    <em>交通</em>
+                                </a>
+                            </li>
+                            <li class="item8">
+                                <a href="#">
+                                    <i></i>
+                                    <em>乡村</em>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="scrollbar-box">
+                        <div class="scrollbar-sideBox">
+                            <ul class="itemList">
+                                <li>
+                                    <a href="#">
+                                        <h1 class="title"><i>1</i>龙门石窟</h1>
+                                        <p class="brief">中国三大石窟之一，历史悠久开凿经历了...</p>
+                                        <p class="star"><i class="has"></i><i class="has"></i><i class="has"></i><i></i><span>8.6</span>69人评论</p>
+                                    </a>
+                                </li>
+                                <li class="active">
+                                    <a href="#">
+                                        <h1 class="title"><i>1</i>龙门石窟</h1>
+                                        <p class="brief">中国三大石窟之一，历史悠久开凿经历了...</p>
+                                        <p class="star"><i class="has"></i><i class="has"></i><i class="has"></i><i></i><span>8.6</span>69人评论</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <h1 class="title"><i>1</i>龙门石窟</h1>
+                                        <p class="brief">中国三大石窟之一，历史悠久开凿经历了...</p>
+                                        <p class="star"><i class="has"></i><i class="has"></i><i class="has"></i><i></i><span>8.6</span>69人评论</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <h1 class="title"><i>1</i>龙门石窟</h1>
+                                        <p class="brief">中国三大石窟之一，历史悠久开凿经历了...</p>
+                                        <p class="star"><i class="has"></i><i class="has"></i><i class="has"></i><i></i><span>8.6</span>69人评论</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <h1 class="title"><i>1</i>龙门石窟</h1>
+                                        <p class="brief">中国三大石窟之一，历史悠久开凿经历了...</p>
+                                        <p class="star"><i class="has"></i><i class="has"></i><i class="has"></i><i></i><span>8.6</span>69人评论</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <h1 class="title"><i>1</i>龙门石窟</h1>
+                                        <p class="brief">中国三大石窟之一，历史悠久开凿经历了...</p>
+                                        <p class="star"><i class="has"></i><i class="has"></i><i class="has"></i><i></i><span>8.6</span>69人评论</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <h1 class="title"><i>1</i>龙门石窟</h1>
+                                        <p class="brief">中国三大石窟之一，历史悠久开凿经历了...</p>
+                                        <p class="star"><i class="has"></i><i class="has"></i><i class="has"></i><i></i><span>8.6</span>69人评论</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <h1 class="title"><i>1</i>龙门石窟</h1>
+                                        <p class="brief">中国三大石窟之一，历史悠久开凿经历了...</p>
+                                        <p class="star"><i class="has"></i><i class="has"></i><i class="has"></i><i></i><span>8.6</span>69人评论</p>
+                                    </a>
+                                </li>
+                                <li class="active">
+                                    <a href="#">
+                                        <h1 class="title"><i>1</i>龙门石窟</h1>
+                                        <p class="brief">中国三大石窟之一，历史悠久开凿经历了...</p>
+                                        <p class="star"><i class="has"></i><i class="has"></i><i class="has"></i><i></i><span>8.6</span>69人评论</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <h1 class="title"><i>1</i>龙门石窟</h1>
+                                        <p class="brief">中国三大石窟之一，历史悠久开凿经历了...</p>
+                                        <p class="star"><i class="has"></i><i class="has"></i><i class="has"></i><i></i><span>8.6</span>69人评论</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <h1 class="title"><i>1</i>龙门石窟</h1>
+                                        <p class="brief">中国三大石窟之一，历史悠久开凿经历了...</p>
+                                        <p class="star"><i class="has"></i><i class="has"></i><i class="has"></i><i></i><span>8.6</span>69人评论</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <h1 class="title"><i>1</i>龙门石窟</h1>
+                                        <p class="brief">中国三大石窟之一，历史悠久开凿经历了...</p>
+                                        <p class="star"><i class="has"></i><i class="has"></i><i class="has"></i><i></i><span>8.6</span>69人评论</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <h1 class="title"><i>1</i>龙门石窟</h1>
+                                        <p class="brief">中国三大石窟之一，历史悠久开凿经历了...</p>
+                                        <p class="star"><i class="has"></i><i class="has"></i><i class="has"></i><i></i><span>8.6</span>69人评论</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <h1 class="title"><i>1</i>龙门石窟</h1>
+                                        <p class="brief">中国三大石窟之一，历史悠久开凿经历了...</p>
+                                        <p class="star"><i class="has"></i><i class="has"></i><i class="has"></i><i></i><span>8.6</span>69人评论</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pageTurn">
+                        <a href="#" class="notHas">上一页</a>
+                        <a href="#">下一页</a>
+                    </div>
+                </div>
+                <div class="mapBox">
+                    <div id="allmap"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+$(function() {
+    $(".scrollbar-box").niceScroll();
+});
+
+// 百度地图API功能
+var map = new BMap.Map("allmap");
+map.centerAndZoom(new BMap.Point(112.460445, 34.624379), 13);
+map.addControl(new BMap.MapTypeControl());
+map.enableScrollWheelZoom(true);
+
+//创建自己图标
+
+var myIcon = new BMap.Icon("res/img/sjlbdt_3.png", new BMap.Size(34, 38));
+var json_data = [
+    [112.460445, 34.624379, "res/img/yjlb_1.png", "龙门石窟", "中国三大石窟之一，历史悠久开凿经历了...", 13],
+    [112.43428, 34.666734, "res/img/yjlb_1.png", "银杏仙庄银杏仙庄银杏仙庄", "中国链接地一", 5],
+    [112.390977, 34.670097, "res/img/yjlb_1.png", "课件课件", "对抗肌肤看看...", 34]
+];
+
+function addPoint(point, imgSrc, title, brief, num, i) {
+    var marker = new BMap.Marker(point, {
+        icon: myIcon
+    });
+    map.addOverlay(marker);
+
+    var label_01 = new BMap.Label(i + 1, {
+        offset: new BMap.Size(11, 9)
+    });
+    label_01.setStyle({
+        color: "#fff",
+        fontSize: "12px",
+        fontFamily: "Verdana",
+        fontWeight: "bold",
+        cursor: "pointer",
+        border: "none",
+        background: "none"
+    });
+    marker.setLabel(label_01);
+
+    marker.addEventListener("click", function() {
+        //map.clearOverlays();
+        $('.itemBox').hide();
+        var myCompOverlay = new ComplexCustomOverlay(point, imgSrc, title, brief, num);
+        map.addOverlay(myCompOverlay);
+    });
+}
+
+for (var i = 0; i < json_data.length; i++) {
+    addPoint(new BMap.Point(json_data[i][0], json_data[i][1]), json_data[i][2], json_data[i][3], json_data[i][4], json_data[i][5], i);
+}
+
+function ComplexCustomOverlay(point, imgSrc, title, brief, num) {
+    this._point = point;
+    this._imgSrc = imgSrc;
+    this._title = title;
+    this._brief = brief;
+    this._num = num;
+}
+
+ComplexCustomOverlay.prototype = new BMap.Overlay();
+ComplexCustomOverlay.prototype.initialize = function(map) {
+    this._map = map;
+    var div = this._div = document.createElement("div");
+    div.className = "itemBox";
+    div.style.position = "absolute";
+    div.style.zIndex = BMap.Overlay.getZIndex(this._point.lat);
+    div.style.height = "227px";
+    div.style.width = "213px";
+    div.style.border = "5px solid #ffffff";
+    div.style.borderRadius = "4px";
+    div.style.backgroundColor = "#ffffff";
+    div.style.boxShadow = "0px 0px 4px 0px rgba(138,138,138,0.50)";
+    div.style.whiteSpace = "nowrap";
+    div.style.MozUserSelect = "none";
+    div.style.fontSize = "12px";
+
+    var img = this._img = document.createElement("img");
+    div.appendChild(img);
+    img.src = this._imgSrc;
+    img.style.width = "100%";
+    img.style.height = "115px";
+
+    var box = this._box = document.createElement("div");
+    div.appendChild(box);
+    box.style.padding = "10px 11px";
+    box.style.width = "190px";
+    box.style.height = "103px";
+    var that = this;
+
+    var h1 = this._h1 = document.createElement("h1");
+    box.appendChild(h1);
+    h1.style.textAlign = "center";
+    h1.style.fontSize = "14px";
+    h1.style.color = "#4a4a4a";
+    h1.appendChild(document.createTextNode(this._title));
+    var that = this;
+
+    var p = this._p = document.createElement("p");
+    box.appendChild(p);
+    p.style.textFamily = "MicrosoftYaHeiLight";
+    p.style.fontSize = "12px";
+    p.style.color = "#9b9b9b";
+    p.style.margin = "4px auto 0 auto";
+    var that = this;
+
+    var txt1 = this._span = document.createElement("span");
+    p.appendChild(txt1);
+    txt1.style.fontSize = "12px";
+    txt1.style.color = "#9b9b9b";
+    txt1.style.display = "block";
+    txt1.appendChild(document.createTextNode(this._brief.substr(0, 15)));
+    var that = this;
+
+    var txt2 = this._span = document.createElement("span");
+    p.appendChild(txt2);
+    txt2.style.fontSize = "12px";
+    txt2.style.color = "#9b9b9b";
+    txt2.style.display = "block";
+    txt2.appendChild(document.createTextNode(this._brief.substr(15, this._brief.length - 1)));
+    var that = this;
+
+    var span = this._span = document.createElement("span");
+    box.appendChild(span);
+    span.style.textFamily = "MicrosoftYaHeiLight";
+    span.style.float = "left";
+    span.style.fontSize = "12px";
+    span.style.color = "#9b9b9b";
+    span.style.marginTop = "10px";
+    span.appendChild(document.createTextNode("景区排名第" + this._num + "名"));
+    var that = this;
+
+    var a = this._a = document.createElement("a");
+    box.appendChild(a);
+    a.style.float = "right";
+    a.style.fontSize = "12px";
+    a.style.color = "#ff4802";
+    a.style.marginTop = "10px";
+    a.appendChild(document.createTextNode("查看详情>"));
+    var that = this;
+
+    var close = this._a = document.createElement("i");
+    box.appendChild(close);
+    close.style.position = "absolute";
+    close.style.top = "16px";
+    close.style.right = "16px";
+    close.style.width = "20px";
+    close.style.height = "20px";
+    close.style.background = "url(res/img/sjlbdt_2.png) no-repeat center";
+    close.style.backgroundColor = "#fff";
+    close.style.borderRadius = "100%";
+    close.style.cursor = "pointer";
+    var that = this;
+
+    var arrow = this._arrow = document.createElement("div");
+    // arrow.style.background = "url(res/img/label.png) no-repeat";
+    arrow.style.position = "absolute";
+    arrow.style.width = "19px";
+    arrow.style.height = "10px";
+    arrow.style.bottom = "-15px";
+    arrow.style.left = "90px";
+    arrow.style.overflow = "hidden";
+    div.appendChild(arrow);
+
+    map.getPanes().labelPane.appendChild(div);
+
+    close.addEventListener("click", function() {
+        $('.itemBox').hide();
+    });
+
+    return div;
+}
+ComplexCustomOverlay.prototype.draw = function() {
+    var map = this._map;
+    var pixel = map.pointToOverlayPixel(this._point);
+    this._div.style.left = pixel.x - parseInt(this._arrow.style.left) - 15 + "px";
+    this._div.style.top = pixel.y - 265 + "px";
+}
+</script>
+
+</html>

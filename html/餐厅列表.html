@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="res/css/index.css">
+    <script src="res/lib/jquery/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=D3e6ac29a69cf34da023250f6c322f7d"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/library/AreaRestriction/1.2/src/AreaRestriction_min.js"></script>
+    <script src="res/js/index.js"></script>
+    <title>餐厅列表</title>
+</head>
+<body>
+    <div class="wraper">
+        <div class="list-banner">
+            banner
+        </div>
+        <div class="box mbx">
+            <span>您所在的位置：</span>
+            <a href="#">网站首页</a>&gt;
+            <a href="#">景区门票</a>&gt;
+            <em>甘肃景区门票</em>
+        </div>
+        <div class="container_box-wrap">
+            <div class="list-slide">
+                <div class="map_recom-mend">
+                    <div id="map_box"></div>
+                    <a href="#">查看大图</a>
+                </div>
+
+                <div class="list_recom-mend">
+                    <h1 class="title">周边景区<a href="#">更多&gt;</a></h1>
+                    <ul class="list_wrap">
+                        <li class="sl-1">
+                            <a href="#">
+                                <div class="pic">
+                                    <span class="pic_sca_box" style="background-image: url(res/img/img.png);"></span>
+                                </div>
+                                <div class="text">
+                                    <h2>娱乐娱乐娱乐娱乐</h2>
+                                    <p class="The-star">5A级</p>
+                                    <div class="botom">
+                                        <span class="rig">291人看过</span>
+                                        <span class="btn-label">天心区</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="sl-1">
+                            <a href="#">
+                                <div class="pic">
+                                    <span class="pic_sca_box" style="background-image: url(res/img/img.png);"></span>
+                                </div>
+                                <div class="text">
+                                    <h2>娱乐娱乐娱乐娱乐</h2>
+                                    <p class="The-star">5A级</p>
+                                    <div class="botom">
+                                        <span class="rig">291人看过</span>
+                                        <span class="btn-label">天心区</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="sl-1">
+                            <a href="#">
+                                <div class="pic">
+                                    <span class="pic_sca_box" style="background-image: url(res/img/img.png);"></span>
+                                </div>
+                                <div class="text">
+                                    <h2>娱乐娱乐娱乐娱乐</h2>
+                                    <p class="The-star">5A级</p>
+                                    <div class="botom">
+                                        <span class="rig">291人看过</span>
+                                        <span class="btn-label">天心区</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="list_recom-mend">
+                    <h1 class="title">猜你想吃<a href="#">更多&gt;</a></h1>
+                    <ul class="list_wrap">
+                        <li class="sl-1">
+                            <a href="#">
+                                <div class="pic">
+                                    <span class="pic_sca_box" style="background-image: url(res/img/img.png);"></span>
+                                </div>
+                                <div class="text">
+                                    <h2>娱乐娱乐娱乐娱乐</h2>
+                                    <div class="botom">
+                                        <span class="rig">291人看过</span>
+                                        <span class="lef food">经典湘菜</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="sl-1">
+                            <a href="#">
+                                <div class="pic">
+                                    <span class="pic_sca_box" style="background-image: url(res/img/img.png);"></span>
+                                </div>
+                                <div class="text">
+                                    <h2>娱乐娱乐娱乐娱乐</h2>
+                                    <div class="botom">
+                                        <span class="rig">291人看过</span>
+                                        <span class="lef food">经典湘菜</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="sl-1">
+                            <a href="#">
+                                <div class="pic">
+                                    <span class="pic_sca_box" style="background-image: url(res/img/img.png);"></span>
+                                </div>
+                                <div class="text">
+                                    <h2>娱乐娱乐娱乐娱乐</h2>
+                                    <div class="botom">
+                                        <span class="rig">291人看过</span>
+                                        <span class="lef food">经典湘菜</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="list_recom-mend">
+                    <h1 class="title">推荐玩法<a href="#">更多&gt;</a></h1>
+                    <ul class="list_wrap">
+                        <li class="sl-1">
+                            <a href="#">
+                                <div class="pic">
+                                    <span class="pic_sca_box" style="background-image: url(res/img/img.png);"></span>
+                                </div>
+                                <div class="text">
+                                    <h2>娱乐娱乐娱乐娱乐</h2>
+                                    <p class="wri">在长沙并没有玩很多地方，大部分都是浪费在路…</p>
+                                    <div class="botom">
+                                        <span class="rig">291人看过</span>
+                                        <span class="lefTxt">2018/02/27</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="sl-1">
+                            <a href="#">
+                                <div class="pic">
+                                    <span class="pic_sca_box" style="background-image: url(res/img/img.png);"></span>
+                                </div>
+                                <div class="text">
+                                    <h2>娱乐娱乐娱乐娱乐</h2>
+                                    <p class="wri">在长沙并没有玩很多地方，大部分都是浪费在路…</p>
+                                    <div class="botom">
+                                        <span class="rig">291人看过</span>
+                                        <span class="lefTxt">2018/02/27</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="sl-1">
+                            <a href="#">
+                                <div class="pic">
+                                    <span class="pic_sca_box" style="background-image: url(res/img/img.png);"></span>
+                                </div>
+                                <div class="text">
+                                    <h2>娱乐娱乐娱乐娱乐</h2>
+                                    <p class="wri">在长沙并没有玩很多地方，大部分都是浪费在路…</p>
+                                    <div class="botom">
+                                        <span class="rig">291人看过</span>
+                                        <span class="lefTxt">2018/02/27</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="list-main">
+                <!-- 搜索 -->
+                <div class="serach_box-top">
+                    <input type="text" placeholder="">
+                    <a href="#">搜索</a>
+                </div>
+                <!-- 选择 -->
+                <div class="select_ctn-box">
+                    <div class="list_nav">
+                        <div class="lef-name">
+                            <div class="name-box">
+                                <span class="style-1">分类</span>
+                            </div>
+                        </div>
+                        <div class="rig_tab">
+                            <a class="first_tab active">不限</a>
+                            <div class="tab">
+                                <a href="#">公园</a>
+                                <a href="#">文化古迹</a>
+                                <a href="#">自然风光</a>
+                                <a href="#">山川</a>
+                                <a href="#">寺庙</a>
+                                <a href="#">古建筑谷</a>
+                                <a href="#">其他公园</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list_nav">
+                        <div class="lef-name">
+                            <div class="name-box">
+                                <span class="style-2">分类</span>
+                            </div>
+                        </div>
+                        <div class="rig_tab">
+                            <a class="first_tab active">区域</a>
+                            <div class="tab">
+                                <a href="#">公园</a>
+                                <a href="#">文化古迹</a>
+                                <a href="#">自然风光</a>
+                                <a href="#">山川</a>
+                                <a href="#">寺庙</a>
+                                <a href="#">自然风光</a>
+                                <a href="#">山川</a>
+                                <a href="#">寺庙</a>
+                                <a href="#">古建筑谷</a>
+                                <a href="#">其他公园</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 热门推荐 -->
+                <div class="sortBox_wrap-cont">
+                    <a href="#" class="active fisrt_box"><span>热门推荐</span></a>
+                    <a href="#" class="up"><span>浏览最多</span></a>
+                    <p class="last_box"><i>99</i>个景点满足条件</p>
+                </div>
+                <ul class="list-special_box jhx-restaurant">
+                    <li class="sl-1">
+                        <a href="#">
+                            <div class="prod_img">
+                                <span class="pic_sca_box" style="background-image: url(res/img/img.png);"></span>
+                            </div>
+                            <div class="text-bbox">
+                                <h6>商家名称商家名称商家名称</h6>
+                                <i class="adr">长沙市天心区**街道**号**楼</i>
+                                <i class="tel">032-123456789</i>
+                                <div class="greens-popu">
+                                    <span>291人看过</span>
+                                    <em class="greens">经典湘菜</em>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="sl-1">
+                        <a href="#">
+                            <div class="prod_img">
+                                <span class="pic_sca_box" style="background-image: url(res/img/img.png);"></span>
+                            </div>
+                            <div class="text-bbox">
+                                <h6>商家名称商家名称商家名称</h6>
+                                <i class="adr">长沙市天心区**街道**号**楼</i>
+                                <i class="tel">032-123456789</i>
+                                <div class="greens-popu">
+                                    <span>291人看过</span>
+                                    <em class="greens">经典湘菜</em>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="sl-1">
+                        <a href="#">
+                            <div class="prod_img">
+                                <span class="pic_sca_box" style="background-image: url(res/img/img.png);"></span>
+                            </div>
+                            <div class="text-bbox">
+                                <h6>商家名称商家名称商家名称</h6>
+                                <i class="adr">长沙市天心区**街道**号**楼</i>
+                                <i class="tel">032-123456789</i>
+                                <div class="greens-popu">
+                                    <span>291人看过</span>
+                                    <em class="greens">经典湘菜</em>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="sl-1">
+                        <a href="#">
+                            <div class="prod_img">
+                                <span class="pic_sca_box" style="background-image: url(res/img/img.png);"></span>
+                            </div>
+                            <div class="text-bbox">
+                                <h6>商家名称商家名称商家名称</h6>
+                                <i class="adr">长沙市天心区**街道**号**楼</i>
+                                <i class="tel">032-123456789</i>
+                                <div class="greens-popu">
+                                    <span>291人看过</span>
+                                    <em class="greens">经典湘菜</em>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="sl-1">
+                        <a href="#">
+                            <div class="prod_img">
+                                <span class="pic_sca_box" style="background-image: url(res/img/img.png);"></span>
+                            </div>
+                            <div class="text-bbox">
+                                <h6>商家名称商家名称商家名称</h6>
+                                <i class="adr">长沙市天心区**街道**号**楼</i>
+                                <i class="tel">032-123456789</i>
+                                <div class="greens-popu">
+                                    <span>291人看过</span>
+                                    <em class="greens">经典湘菜</em>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="sl-1">
+                        <a href="#">
+                            <div class="prod_img">
+                                <span class="pic_sca_box" style="background-image: url(res/img/img.png);"></span>
+                            </div>
+                            <div class="text-bbox">
+                                <h6>商家名称商家名称商家名称</h6>
+                                <i class="adr">长沙市天心区**街道**号**楼</i>
+                                <i class="tel">032-123456789</i>
+                                <div class="greens-popu">
+                                    <span>291人看过</span>
+                                    <em class="greens">经典湘菜</em>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="sl-1">
+                        <a href="#">
+                            <div class="prod_img">
+                                <span class="pic_sca_box" style="background-image: url(res/img/img.png);"></span>
+                            </div>
+                            <div class="text-bbox">
+                                <h6>商家名称商家名称商家名称</h6>
+                                <i class="adr">长沙市天心区**街道**号**楼</i>
+                                <i class="tel">032-123456789</i>
+                                <div class="greens-popu">
+                                    <span>291人看过</span>
+                                    <em class="greens">经典湘菜</em>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="sl-1">
+                        <a href="#">
+                            <div class="prod_img">
+                                <span class="pic_sca_box" style="background-image: url(res/img/img.png);"></span>
+                            </div>
+                            <div class="text-bbox">
+                                <h6>商家名称商家名称商家名称</h6>
+                                <i class="adr">长沙市天心区**街道**号**楼</i>
+                                <i class="tel">032-123456789</i>
+                                <div class="greens-popu">
+                                    <span>291人看过</span>
+                                    <em class="greens">经典湘菜</em>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="sl-1">
+                        <a href="#">
+                            <div class="prod_img">
+                                <span class="pic_sca_box" style="background-image: url(res/img/img.png);"></span>
+                            </div>
+                            <div class="text-bbox">
+                                <h6>商家名称商家名称商家名称</h6>
+                                <i class="adr">长沙市天心区**街道**号**楼</i>
+                                <i class="tel">032-123456789</i>
+                                <div class="greens-popu">
+                                    <span>291人看过</span>
+                                    <em class="greens">经典湘菜</em>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="pageBox_container-botm">
+                    <a href="javascript:void(0);" class="prevBtn">上一页<i></i></a>
+                    <div class="number_show-tt">
+                        <a href="javascript:void(0);">1</a>
+                        <a href="javascript:void(0);" class="active">2</a>
+                        <a href="javascript:void(0);">3</a>
+                        <a href="javascript:void(0);">4</a>
+                        <a href="javascript:void(0);">6</a>
+                        <a href="javascript:void(0);">7</a>
+                        <a href="javascript:void(0);">8</a>
+                        <span>...</span>
+                        <a href="javascript:void(0);">12</a>
+                    </div>
+                    <a href="javascript:void(0);" class="nextBtn">下一页<i></i></a>
+                    <p>到<input type="text" value="7">页</p>
+                    <a href="javascript:void(0);" class="submitBtn">确定</a>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+    <script>
+        var map = new BMap.Map("map_box");
+        map.centerAndZoom(new BMap.Point(103.866169, 36.065159), 12);
+        map.addControl(new BMap.NavigationControl({
+            anchor: BMAP_ANCHOR_TOP_RIGHT,
+            type: BMAP_NAVIGATION_CONTROL_ZOOM
+        }));
+
+        function ComplexCustomOverlay(point, title, numb) {
+            this._point = point;
+            this._title = title;
+            this._numb = numb;
+        }
+        ComplexCustomOverlay.prototype = new BMap.Overlay();
+        ComplexCustomOverlay.prototype.initialize = function(map) {
+            this._map = map;
+            var wrap = this._wrap = document.createElement("div");
+            wrap.className = "cover_lab-wrap";
+            wrap.innerHTML ='<div class="cover_lab-conta">\
+            <em>'+this._numb+'</em>\
+            <span>'+this._title+'</span>\
+            </div>';
+
+            map.getPanes().labelPane.appendChild(wrap);
+            return wrap;
+        };
+        ComplexCustomOverlay.prototype.draw = function() {
+            var map = this._map;
+            var pixel = map.pointToOverlayPixel(this._point);
+            this._wrap.style.left = pixel.x - 50 + "px";
+            this._wrap.style.top = pixel.y - 50 + "px";
+        };
+
+        function addPoint(lon, lat, title, numb) {
+            var pt = new BMap.Point(lon, lat);
+            var myIcon = new BMap.Icon("res/img/des.png", new BMap.Size(34, 34));
+            var marker = new BMap.Marker(pt, {
+                icon: myIcon
+            });
+            map.addOverlay(marker);
+
+            var myCompOverlay = new ComplexCustomOverlay(pt, title, numb);
+            map.addOverlay(myCompOverlay);
+        }
+        var data = [{
+            "lon": 103.885855,
+            "lat": 36.060289,
+            "numb": 1,
+            "title": "酒店名称酒店名称"
+        }]
+
+        for (var i = 0; i < data.length; i++) {
+            addPoint(data[i].lon, data[i].lat, data[i].title, data[i].numb);
+        }
+
+    </script>
+</body>
+</html>

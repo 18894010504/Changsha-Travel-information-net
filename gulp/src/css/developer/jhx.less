@@ -1,0 +1,137 @@
+@import url(./variable.less);
+.jhx-list-box {
+	.textBox{
+		h1 {
+			em {
+				display: inline-block;
+				*display: inline;
+				*zoom: 1;
+				vertical-align: middle;
+			}
+			span {
+				display: inline-block;
+				*display: inline;
+				*zoom: 1;
+				width: 56px;
+				height: 20px;
+				font-size: 14px;
+				line-height: 20px;
+				text-align:center;
+				color: #fff;
+				margin-left: 5px;
+			}
+		}
+		.stage1{
+			background-color: #999999;
+		}
+		.stage2 {
+			background-color: #60ab0e;
+		}
+		.stage3 {
+			background-color: rgba(220,31,31,0.74);
+		}
+		.stage4 {
+			background-color: @themeColor;
+		}
+		.iconBox {
+			overflow: hidden;
+			margin-top:10px;
+		}
+	}
+}
+.jhx-restaurant {
+	.text-bbox {
+		padding: 15px 15px 18px 15px;
+	}
+	.greens {
+		padding-left: 18px;
+		background: url("@{imgUrl}food.png") no-repeat left center;
+		color: @themeColor;
+	}
+	.tel{
+		display: block;
+		padding-left: 16px;
+		background: url("@{imgUrl}jhx-tel.png") no-repeat left center;
+		font-style: normal;
+		margin-top: 6px;
+		font-size: 14px;
+		color: #888;
+		.w-b;
+	}
+	.adr{
+		display: block;
+		padding-left: 16px;
+		background: url("@{imgUrl}adr.png") no-repeat left center;
+		font-style: normal;
+		margin-top: 6px;
+		font-size: 14px;
+		color: #888;
+		.w-b;
+	}
+	.greens-popu {
+		margin-top: 16px;
+		span{
+			float: right;
+		}
+	}
+}
+.jhx-gl-head{
+	line-height: 32px;
+	padding-bottom:20px;
+
+	h1{
+		font-weight: normal;
+		font-size: 26px;
+		color:#1e1e1e;
+	}
+	.jhx-iconBox{
+		width: 200px;
+		overflow: hidden;
+		padding: 0;
+		margin: 12px auto 0 auto;
+		font-size:12px;
+		color:#999999;
+		span{
+			padding-left:21px;
+		}
+		.eye{
+			background: url("@{imgUrl}eye.png") no-repeat left center;
+		}
+		.time{
+			margin-left:36px;
+			background: url("@{imgUrl}time.png") no-repeat left center;
+			background-size: 14px;
+		}
+	}
+}
+.jhx-gl-content{
+	border-top: 1px solid rgba(151,151,151,.4);
+	padding: 20px 0 0 0;
+	box-sizing: border-box;
+	line-height: 26px;
+	font-size:14px;
+	position: relative;
+
+	p{
+		color:#333333;
+		margin-bottom: 10px;
+	}
+	img{
+		width: 100%;
+		display:block;
+		margin-bottom: 10px;
+	}
+	.community{
+		font-size:14px;
+		width: 131px;
+		margin-top:41px;
+		float: right;
+		text-align: center;
+		margin-right: 105px;
+		span:last-child{
+			display: block;
+			margin:10px 0;
+			text-align: center;
+		}
+	}
+}  

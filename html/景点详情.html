@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="res/css/index.css">
+    <script src="res/lib/jquery/jquery-1.11.3.min.js"></script>
+    <script src="res/lib/superSlide/jquery.SuperSlide.2.1.1.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=D3e6ac29a69cf34da023250f6c322f7d"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/library/AreaRestriction/1.2/src/AreaRestriction_min.js"></script>
+    <script src="res/lib/jquery/echarts.simple.min.js"></script>
+    <script src="res/js/index.js"></script>
+    <title>景点详情</title>
+</head>
+<body>
+    <div class="wraper">
+        <!-- 面包屑 -->
+        <div class="box mbx">
+            <span>您所在的位置：</span>
+            <a href="#">网站首页</a>&gt;
+            <a href="#">景区门票</a>&gt;
+            <em>甘肃景区门票</em>
+        </div>
+        <!-- 顶部 -->
+        <div class="topBigBox">
+            <div class="slideBox">
+                <div class="bd">
+                    <ul class="bigImg">
+                        <li style="background-image: url(res/img/img.png)">
+                        </li>
+                        <li style="background-image: url(res/img/img.png)">
+                        </li>
+                        <li style="background-image: url(res/img/img.png)">
+                        </li>
+                        <li style="background-image: url(res/img/img.png)">
+                        </li>
+                        <li style="background-image: url(res/img/img.png)">
+                        </li>
+                        <li style="background-image: url(res/img/img.png)">
+                        </li>
+                    </ul>
+                </div>
+                <a class="newsPrev prev" href="javascript:void(0)"></a>
+                <a class="newsNext next" href="javascript:void(0)"></a>
+            </div>
+            <div class="content">
+                <h1>敦煌影视古城</h1>
+                <div class="view-info-txt">
+                    <div class="view-level">
+                        <em><i>AAAAA</i>景区</em>
+                        <span class="extra_label-show">天心区</span>
+                    </div>
+                    <i class="tit">来中国秀美的七彩丹霞赏彩色丹霞</i>
+                    <p>
+                        <em class="name">景点地址</em>
+                        <span>甘肃省酒泉市敦煌市西南18公里处的大漠戈壁滩。</span>
+                        <a>查看地图</a>
+                    </p>
+                    <p>
+                        <em class="name">开放时间</em>
+                        <span>24小时</span>
+                    </p>
+                    <p>
+                        <em class="name">公交</em>
+                        <span>128、116、109、135路公交车</span>
+                    </p>
+                    <p>
+                        <em class="name">自驾</em>
+                        <span>自驾游自驾游自驾游自驾游自驾游</span>
+                    </p>
+                    <p>
+                        <em class="name">停车场</em>
+                        <span>停车场停车场停车场停车场停车场</span>
+                    </p>
+                    <div class="btn_yd-box">
+                        <a href="#">预订</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 内容 -->
+        <div class="mar_top-twenty fn-clear">
+            <div class="list-slide">
+                <div class="list_recom-mend">
+                    <h1 class="title">周边景区<a href="#">更多&gt;</a></h1>
+                    <ul class="list_wrap">
+                        <li class="sl-1">
+                            <a href="#">
+                                <div class="pic">
+                                    <span class="pic_sca_box" style="background-image: url(res/img/img.png);"></span>
+                                </div>
+                                <div class="text">
+                                    <h2>景区景区景区景区景区</h2>
+                                    <p class="The-star">5A级</p>
+                                    <div class="botom">
+                                        <span class="rig">291人看过</span>
+                                        <span class="btn-label">天心区</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="sl-1">
+                            <a href="#">
+                                <div class="pic">
+                                    <span class="pic_sca_box" style="background-image: url(res/img/img.png);"></span>
+                                </div>
+                                <div class="text">
+                                    <h2>景区景区景区景区</h2>
+                                    <p class="The-star">5A级</p>
+                                    <div class="botom">
+                                        <span class="rig">291人看过</span>
+                                        <span class="btn-label">天心区</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="sl-1">
+                            <a href="#">
+                                <div class="pic">
+                                    <span class="pic_sca_box" style="background-image: url(res/img/img.png);"></span>
+                                </div>
+                                <div class="text">
+                                    <h2>景区景区景区</h2>
+                                    <p class="The-star">5A级</p>
+                                    <div class="botom">
+                                        <span class="rig">291人看过</span>
+                                        <span class="btn-label">天心区</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="list_tips-list">
+                    <h1 class="title">旅游贴士<a href="#">换一换</a></h1>
+                    <ul>
+                        <li class="ts">
+                            <i></i>
+                            <div>
+                                <h5 class="title">为重要证件留底<a class="triggers">展开</a></h5>
+                                <p>除了要在出门前彻底检查证件是否带齐之外，最好用手机或者相机将每个证件的正反面都拍照留底保存，机票最好也有副本备份，并且发一份到自己的邮箱存档。另外，还要带两张证件照以防出门在外要重办遗失证件。如果是出国旅游，请一定要记下你的国籍在目的地的大使馆地址电话</p>
+                            </div>
+                            <b></b>
+                        </li>
+
+                        <li class="ts">
+                            <i></i>
+                            <div>
+                                <h5 class="title">为重要证件留底<a class="triggers">展开</a></h5>
+                                <p>除了要在出门前彻底检查证件是否带齐之外，最好用手机或者相机将每个证件的正反面都拍照留底保存，机票最好也有副本备份，并且发一份到自己的邮箱存档。另外，还要带两张证件照以防出门在外要重办遗失证件。如果是出国旅游，请一定要记下你的国籍在目的地的大使馆地址电话</p>
+                            </div>
+                            <b></b>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="list-main">
+                <div class="detail_content-bigBox detail_content-line">
+                    <div class="areaBlock">
+                        <h1 class="no_nav-lab"><i class="mp-icon1"></i>预订须知</h1>
+                        <div class="knows">
+                            <p>预约提醒：无需预约，消费高峰时可能需要等位3、预约提醒：无需预约，消费高峰时可能需要等位3、预约提醒：无需预约，消费高峰时可能需要等位预约提醒：无需预约，消费高峰时可能需要等位3、预约提醒：无需预约，消费高峰时可能需要等位3、预约提醒：无需预约，消费高峰时可能需要等位预约提醒：无需预约，消费高峰时可能需要等位3、预约提醒：无需预约，消费高峰时可能需要等位3、预约提醒：无需预约，消费高峰时可能需要等位3、预约提醒：无需预约，消费高峰时可能需要等位3、预约提醒：无需预约，消费高峰时可能需要等位</p>
+                        </div>
+                    </div>
+                    <div class="areaBlock">
+                        <h1><i class="mp-icon2"></i>景点简介</h1>
+                        <div class="knows">
+                            <img src="res/img/img.png"/>
+                            <p>预约提醒：无需预约，消费高峰时可能需要等位3、预约提醒：无需预约，消费高峰时可能需要等位3、预约提醒：无需预约，消费高峰时可能需要等位预约提醒：无需预约，消费高峰时可能需要等位3、预约提醒：无需预约，消费高峰时可能需要等位3、预约提醒：无需预约，消费高峰时可能需要等位预约提醒：无需预约，消费高峰时可能需要等位3、预约提醒：无需预约，消费高峰时可能需要等位3、预约提醒：无需预约，消费高峰时可能需要等位3、预约提醒：无需预约，消费高峰时可能需要等位3、预约提醒：无需预约，消费高峰时可能需要等位</p>
+                            <img src="res/img/img.png"/>
+                            <p>预约提醒：无需预约，消费高峰时可能需要等位3、预约提醒：无需预约，消费高峰时可能需要等位3、预约提醒：无需预约，消费高峰时可能需要等位预约提醒：无需预约，消费高峰时可能需要等位3、预约提醒：无需预约，消费高峰时可能需要等位3、预约提醒：无需预约，消费高峰时可能需要等位预约提醒：无需预约，消费高峰时可能需要等位3、预约提醒：无需预约，消费高峰时可能需要等位3、预约提醒：无需预约，消费高峰时可能需要等位3、预约提醒：无需预约，消费高峰时可能需要等位3、预约提醒：无需预约，消费高峰时可能需要等位</p>
+                            <img src="res/img/img.png"/>
+                        </div>
+                    </div>
+                    <div class="areaBlock">
+                        <h1><i class="mp-icon3"></i>交通指南</h1>
+                        <div class="knows traffic">
+                            <div class="traffic-guide" id="traffic-guide"></div>
+                            <div class="traff-ic_txt">
+                                <h5>交通信息</h5>
+                                <div class="text-show">
+                                    <p><span>自驾线路：</span><em>景区景点介绍海淀区巴沟路2号北京华联万柳购物中心</em></p>
+                                    <p><span>公共线路：</span><em>景区景点介绍海淀区巴沟路2号北京华联万柳购物中心</em></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="entertainment-list">
+                    <div class="title-list">
+                        <p>推荐美食</p>
+                        <a href="#">更多&gt;</a>
+                    </div>
+                    <ul class="food-entertainment">
+                        <li class="sl-1">
+                            <a href="#">
+                                <div class="pic-box">
+                                    <span class="The-picture pic_sca_box" style="background-image: url(res/img/img.png)"></span>
+                                </div>
+                                <div class="text-box">
+                                    <h2>美食没事美式美食</h2>
+                                    <span>经典湘菜</span>
+                                    <p>简介简介简介简介简介简介简介简介简介简介简介简介</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="sl-1">
+                            <a href="#">
+                                <div class="pic-box">
+                                    <span class="The-picture pic_sca_box" style="background-image: url(res/img/img.png)"></span>
+                                </div>
+                                <div class="text-box">
+                                    <h2>美食没事美式美食</h2>
+                                    <span>经典湘菜</span>
+                                    <p>简介简介简介简介简介简介简介简介简介简介简介简介</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="sl-1">
+                            <a href="#">
+                                <div class="pic-box">
+                                    <span class="The-picture pic_sca_box" style="background-image: url(res/img/img.png)"></span>
+                                </div>
+                                <div class="text-box">
+                                    <h2>美食没事美式美食</h2>
+                                    <span>经典湘菜</span>
+                                    <p>简介简介简介简介简介简介简介简介简介简介简介简介</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="entertainment-list">
+                    <div class="title-list">
+                        <p>推荐娱乐</p>
+                        <a href="#">更多&gt;</a>
+                    </div>
+                    <ul class="food-entertainment">
+                        <li class="sl-1">
+                            <a href="#">
+                                <div class="pic-box">
+                                    <span class="The-picture pic_sca_box" style="background-image: url(res/img/img.png)"></span>
+                                </div>
+                                <div class="text-box">
+                                    <h2>娱乐娱乐娱乐娱乐</h2>
+                                    <span>经典湘菜</span>
+                                    <p>简介简介简介简介简介简介简介简介简介简介简介简介</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="sl-1">
+                            <a href="#">
+                                <div class="pic-box">
+                                    <span class="The-picture pic_sca_box" style="background-image: url(res/img/img.png)"></span>
+                                </div>
+                                <div class="text-box">
+                                    <h2>娱乐娱乐娱乐娱乐</h2>
+                                    <span>经典湘菜</span>
+                                    <p>简介简介简介简介简介简介简介简介简介简介简介简介</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="sl-1">
+                            <a href="#">
+                                <div class="pic-box">
+                                    <span class="The-picture pic_sca_box" style="background-image: url(res/img/img.png)"></span>
+                                </div>
+                                <div class="text-box">
+                                    <h2>娱乐娱乐娱乐娱乐</h2>
+                                    <span>经典湘菜</span>
+                                    <p>简介简介简介简介简介简介简介简介简介简介简介简介</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        jQuery(".slideBox").slide({
+            mainCell: ".bd ul",
+            autoPlay: false,
+            prevCell: ".newsPrev",
+            nextCell: ".newsNext"
+        });
+
+        var map = new BMap.Map("traffic-guide");
+        map.centerAndZoom(new BMap.Point(103.885855, 36.060289), 12);
+        var navigationControl = new BMap.NavigationControl({
+            anchor: BMAP_ANCHOR_TOP_LEFT,
+            type: BMAP_NAVIGATION_CONTROL_LARGE,
+            enableGeolocation: true
+        });
+        map.addControl(navigationControl);
+
+        function ComplexCustomOverlay1(point, title, address) {
+            this._point = point;
+            this._title = title;
+            this._address = address;
+        }
+        ComplexCustomOverlay1.prototype = new BMap.Overlay();
+        ComplexCustomOverlay1.prototype.initialize = function (map) {
+            this._map = map;
+            var wrap = this._wrap = document.createElement("div");
+            wrap.className = "position-wrap";
+
+            var box = document.createElement("div");
+            box.className = "view-tra-ffic";
+            wrap.appendChild(box);
+
+            var sj = document.createElement("span");
+            sj.className = "tra-big-sj";
+            box.appendChild(sj);
+
+            var ssj = document.createElement("em");
+            ssj.className = "tra-small-sj";
+            sj.appendChild(ssj);
+
+            var name = document.createElement("p");
+            name.className = "tra-ffic-name";
+            name.appendChild(document.createTextNode(this._title));
+            box.appendChild(name);
+
+            var span = document.createElement("span");
+            span.className = "close-ffic-map";
+            name.appendChild(span);
+
+            span.addEventListener("click", function () {
+                wrap.remove();
+            });
+
+            var address = document.createElement("p");
+            address.className = "tra-ffic-address";
+            address.appendChild(document.createTextNode(this._address));
+            box.appendChild(address);
+
+            var query = document.createElement("a");
+            query.className = "tra-ffic-query";
+            query.appendChild(document.createTextNode("查询线路"));
+            box.appendChild(query);
+
+            map.getPanes().labelPane.appendChild(wrap);
+            return wrap;
+        };
+        ComplexCustomOverlay1.prototype.draw = function () {
+            var map = this._map;
+            var pixel = map.pointToOverlayPixel(this._point);
+            this._wrap.style.left = pixel.x - 143 + "px";
+            this._wrap.style.top = pixel.y - 130 + "px";
+        };
+
+        function addPoint1(lon, lat, title, address) {
+            var pt = new BMap.Point(lon, lat);
+            var myIcon = new BMap.Icon("res/img/icon_07.png", new BMap.Size(30, 39));
+            var marker = new BMap.Marker(pt, {
+                icon: myIcon
+            });
+            map.addOverlay(marker);
+
+            marker.addEventListener("click", function () {
+                $(".position-wrap").remove();
+                var myCompOverlay = new ComplexCustomOverlay1(pt, title, address);
+                map.addOverlay(myCompOverlay);
+            });
+
+        }
+        var data = [{
+            "lon": "103.885855",
+            "lat": "36.060289",
+            "title": "敦煌影视古城",
+            "address": "甘肃省酒泉市敦煌市西南18公里处的大漠戈壁滩"
+        }, {
+            "lon": "103.780901",
+            "lat": "36.07618",
+            "title": "敦煌影视古城2",
+            "address": "甘肃省酒泉市敦煌市西南18公"
+        }]
+
+        for (var i = 0; i < data.length; i++) {
+            addPoint1(data[i].lon, data[i].lat, data[i].title, data[i].address);
+        };
+
+        $(".triggers").click(function () {
+            var that = $(this).parent().parent().parent()
+            if($(this).parent().parent().parent().hasClass("active")){
+                $(".list_tips-list ul li").removeClass("active")
+                $(this).text("展开")
+            }
+            else{
+                $(".list_tips-list ul li").removeClass("active")
+                that.addClass("active")
+                $(".triggers").text("展开")
+                $(this).text("收起")
+            }
+        });
+
+    </script>
+</body>
+</html>

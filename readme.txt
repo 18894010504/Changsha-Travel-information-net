@@ -1,2 +1,1 @@
-Õâ¸öÐÂ½¨µÄÒ»¸ö²âÊÔ£¬°ÑÖ®Ç°×ö¹ýµÄÒ»¸öÏîÄ¿·Åµ½githubÖÐ¡£ ×÷Õß£ºÊ·ÐÛÎ°
-Creating a new branch is quick.ÐÂ½¨Ò»¸ö·ÖÖ§ºóÌí¼ÓµÄÄÚÈÝ¡£
+è¿™ä¸ªæ–°å»ºçš„ä¸€ä¸ªæµ‹è¯•ï¼ŒæŠŠä¹‹å‰åšè¿‡çš„ä¸€ä¸ªé¡¹ç›®æ”¾åˆ°githubä¸­ã€‚ ä½œè€…ï¼šå²é›„ä¼Ÿ
